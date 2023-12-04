@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facebookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="friend">
+    <Key>
+      <PropertyRef Name="id_friends" />
+    </Key>
+    <Property Name="id_friends" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="friends_name" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="post2">
+    <Key>
+      <PropertyRef Name="lines" />
+    </Key>
+    <Property Name="lines" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userr_login2">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="passwordd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="facebookEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="friends" EntityType="Self.friend" />
+    <EntitySet Name="post2" EntityType="Self.post2" />
+    <EntitySet Name="userr_login2" EntityType="Self.userr_login2" />
+  </EntityContainer>
+</Schema>

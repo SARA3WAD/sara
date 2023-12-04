@@ -1,0 +1,23 @@
+﻿<Page x:Class="facebook.post"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:facebook"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="post" Background="White">
+    <StackPanel>
+    <Grid>
+            <Label FontSize="36" HorizontalAlignment="Center" FontFamily="Snap ITC">Post Page</Label>
+            <Label FontSize="26" Margin="21,88,510,-88" FontFamily="Snap ITC">Write Your Post:</Label>
+            <TextBox Margin="310,88,32,-148"></TextBox>
+            <Button FontSize="26" Margin="42,144,531,-146" FontFamily="Snap ITC" Click="Button_Click">share</Button>
+            <DataGrid Margin="21,227,16,-336"></DataGrid>
+            <Button FontSize="26" Margin="78,401,568,-379" FontFamily="snap itc">delete</Button>
+            <Button FontSize="26" FontFamily="snap itc" Margin="515,401,136,-379">update</Button>
+        
+        
+    </Grid>
+    </StackPanel>
+</Page>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="facebookModelStoreContainer" CdmEntityContainer="facebookEntities">
+    <EntitySetMapping Name="friends">
+      <EntityTypeMapping TypeName="facebookModel.friend">
+        <MappingFragment StoreEntitySet="friends">
+          <ScalarProperty Name="id_friends" ColumnName="id_friends" />
+          <ScalarProperty Name="friends_name" ColumnName="friends_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="post2">
+      <EntityTypeMapping TypeName="facebookModel.post2">
+        <MappingFragment StoreEntitySet="post2">
+          <ScalarProperty Name="lines" ColumnName="lines" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userr_login2">
+      <EntityTypeMapping TypeName="facebookModel.userr_login2">
+        <MappingFragment StoreEntitySet="userr_login2">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

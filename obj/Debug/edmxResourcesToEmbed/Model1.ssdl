@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facebookModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="friends">
+    <Key>
+      <PropertyRef Name="id_friends" />
+    </Key>
+    <Property Name="id_friends" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="friends_name" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="post2">
+    <Key>
+      <PropertyRef Name="lines" />
+    </Key>
+    <Property Name="lines" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userr_login2">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="passwordd" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="facebookModelStoreContainer">
+    <EntitySet Name="friends" EntityType="Self.friends" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="post2" EntityType="Self.post2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userr_login2" EntityType="Self.userr_login2" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
